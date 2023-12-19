@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593C1B0D2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B0C2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift */; };
+		593C1B0E2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B0C2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift */; };
+		593C1B0F2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B0C2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift */; };
+		593C1B112B353070009CF227 /* IfcNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B102B353070009CF227 /* IfcNode.swift */; };
+		593C1B122B353070009CF227 /* IfcNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B102B353070009CF227 /* IfcNode.swift */; };
+		593C1B132B353070009CF227 /* IfcNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B102B353070009CF227 /* IfcNode.swift */; };
+		593C1B152B357F2B009CF227 /* IfcElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B142B357F2B009CF227 /* IfcElement.swift */; };
+		593C1B162B357F2B009CF227 /* IfcElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B142B357F2B009CF227 /* IfcElement.swift */; };
+		593C1B172B357F2B009CF227 /* IfcElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1B142B357F2B009CF227 /* IfcElement.swift */; };
+		595D55C72B29818500606EFA /* GLTFScene+IFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D55C62B29818500606EFA /* GLTFScene+IFC.swift */; };
+		595D55C82B29818500606EFA /* GLTFScene+IFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D55C62B29818500606EFA /* GLTFScene+IFC.swift */; };
+		595D55C92B29818500606EFA /* GLTFScene+IFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D55C62B29818500606EFA /* GLTFScene+IFC.swift */; };
+		595D55CB2B29B36E00606EFA /* IfcAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D55CA2B29B36E00606EFA /* IfcAttribute.swift */; };
+		595D55CC2B29B36E00606EFA /* IfcAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D55CA2B29B36E00606EFA /* IfcAttribute.swift */; };
+		595D55CD2B29B36E00606EFA /* IfcAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595D55CA2B29B36E00606EFA /* IfcAttribute.swift */; };
 		830C44B226F292C60075CCBF /* GLTFKit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C44B126F292C60075CCBF /* GLTFKit2.framework */; };
 		830C44B326F292C60075CCBF /* GLTFKit2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 830C44B126F292C60075CCBF /* GLTFKit2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		830C44B526F29B2C0075CCBF /* GLTFKit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830C44B126F292C60075CCBF /* GLTFKit2.framework */; };
@@ -101,6 +116,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		593C1B0C2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GLTFSceneSource+IFC.swift"; sourceTree = "<group>"; };
+		593C1B102B353070009CF227 /* IfcNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfcNode.swift; sourceTree = "<group>"; };
+		593C1B142B357F2B009CF227 /* IfcElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfcElement.swift; sourceTree = "<group>"; };
+		595D55C62B29818500606EFA /* GLTFScene+IFC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GLTFScene+IFC.swift"; sourceTree = "<group>"; };
+		595D55CA2B29B36E00606EFA /* IfcAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfcAttribute.swift; sourceTree = "<group>"; };
 		830C44B126F292C60075CCBF /* GLTFKit2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GLTFKit2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		833684CA26F139830057B9CA /* GLTFQuickLook.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GLTFQuickLook.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		833684CB26F139830057B9CA /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
@@ -179,6 +199,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		595D55C52B29818500606EFA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				593C1B0C2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift */,
+				595D55C62B29818500606EFA /* GLTFScene+IFC.swift */,
+				595D55CA2B29B36E00606EFA /* IfcAttribute.swift */,
+				593C1B142B357F2B009CF227 /* IfcElement.swift */,
+				593C1B102B353070009CF227 /* IfcNode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		833684CD26F139840057B9CA /* QuickLook */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +258,7 @@
 		83D994F825C6573C00B5B234 = {
 			isa = PBXGroup;
 			children = (
+				595D55C52B29818500606EFA /* Extensions */,
 				833684DF26F154D40057B9CA /* Backgrounds */,
 				83AB9EA026D98BCF00FD9C95 /* Models */,
 				83D9950325C6573C00B5B234 /* macOS */,
@@ -461,7 +494,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				834BEED62B1D041800F7E67A /* ContentView.swift in Sources */,
+				593C1B0F2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift in Sources */,
+				593C1B172B357F2B009CF227 /* IfcElement.swift in Sources */,
 				834BEED42B1D041800F7E67A /* App.swift in Sources */,
+				595D55C92B29818500606EFA /* GLTFScene+IFC.swift in Sources */,
+				593C1B132B353070009CF227 /* IfcNode.swift in Sources */,
+				595D55CD2B29B36E00606EFA /* IfcAttribute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,8 +508,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D9950725C6573C00B5B234 /* ViewController.swift in Sources */,
+				593C1B0D2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift in Sources */,
 				83D5B17D278295C30015E015 /* AnimationPlaybackViewController.swift in Sources */,
+				595D55CB2B29B36E00606EFA /* IfcAttribute.swift in Sources */,
+				593C1B112B353070009CF227 /* IfcNode.swift in Sources */,
+				595D55C72B29818500606EFA /* GLTFScene+IFC.swift in Sources */,
 				83D27444286B768E0003A3C5 /* SampleDracoPlugin.mm in Sources */,
+				593C1B152B357F2B009CF227 /* IfcElement.swift in Sources */,
 				83D9950525C6573C00B5B234 /* AppDelegate.swift in Sources */,
 				83D9950925C6573C00B5B234 /* GLTFDocument.swift in Sources */,
 			);
@@ -482,7 +525,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				83FFB68F26CF0CF3008AE676 /* ViewController.swift in Sources */,
+				593C1B0E2B33F8E2009CF227 /* GLTFSceneSource+IFC.swift in Sources */,
+				593C1B162B357F2B009CF227 /* IfcElement.swift in Sources */,
 				83FFB68B26CF0CF3008AE676 /* AppDelegate.swift in Sources */,
+				595D55C82B29818500606EFA /* GLTFScene+IFC.swift in Sources */,
+				593C1B122B353070009CF227 /* IfcNode.swift in Sources */,
+				595D55CC2B29B36E00606EFA /* IfcAttribute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

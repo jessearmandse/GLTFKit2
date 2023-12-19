@@ -8,7 +8,26 @@ class ViewController: NSViewController {
         didSet {
             if let asset = asset {
                 let source = GLTFSCNSceneSource(asset: asset)
-                sceneView.scene = source.defaultScene
+
+                let assetTypes: [IfcAssetType] = [.architectural, .structural, .mep]
+
+                let scene = source.defaultScene
+                assetTypes.forEach { type in
+                    do {
+                        let ifcHierarchy = try source.ifcHierarchyFromAsset(asset, assetType: type)
+                        if let ifcRootNode = source.ifcRootFromIFCHierarchy(
+                            ifcHierarchy,
+                            assetType: type
+                        ) {
+                            scene?.rootNode.addChildNode(ifcRootNode)
+                        }
+                    } catch {
+                        Swift.debugPrint("\(error)")
+                    }
+
+                }
+
+                sceneView.scene = scene
                 animations = source.animations
                 sceneView.scene?.lightingEnvironment.contents = "studio.hdr"
                 sceneView.scene?.lightingEnvironment.intensity = 1.0
