@@ -11,7 +11,7 @@ import GLTFKit2
 
 let logger = Logger(subsystem: "com.metalbyexample.gltfkit2", category: "GLTFScene+IFC")
 
-enum IfcAssetType: uint16, CustomStringConvertible {
+enum IfcAssetType: UInt16, CustomStringConvertible {
     case architectural
     case structural
     case mep
