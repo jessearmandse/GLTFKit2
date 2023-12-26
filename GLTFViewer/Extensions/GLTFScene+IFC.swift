@@ -113,6 +113,7 @@ extension GLTFScene {
         guard let attribute = try readIfcAttribute(from: storey, parentObjectType: parentObjectType, parentId: parentId) else {
             throw IfcExtrasError.attributesError(element: parentObjectType)
         }
+        logger.debug("\(attribute.debugDescription)")
     }
     
     func readIfcAttribute(from node: [String: Any], parentObjectType: String, parentId: String) throws -> IfcAttribute? {

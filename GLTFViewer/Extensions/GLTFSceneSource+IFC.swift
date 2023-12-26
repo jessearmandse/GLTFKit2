@@ -36,14 +36,14 @@ extension GLTFSCNSceneSource {
 
         ifcHierarchy.forEach { key, value in
             if !(ifcNodes.contains { $0.key == key }) {
-                let node = IfcNode(ifcID: key, ifcTag: value.attribute.typeName, ifcAssetType: assetType)
+                let node = SCNNode.nodeFromIfcId(key, ifcTag: value.attribute.typeName, ifcAssetType: assetType)
                 node.name = key
                 ifcNodes[key] = node
             }
 
             value.childAttributes.forEach { attribute in
                 if !(ifcNodes.contains { $0.key == attribute.id }) {
-                    let node = IfcNode(ifcID: attribute.id, ifcTag: attribute.typeName, ifcAssetType: assetType)
+                    let node = SCNNode.nodeFromIfcId(attribute.id, ifcTag: attribute.typeName, ifcAssetType: assetType)
                     node.name = attribute.id
                     ifcNodes[attribute.id] = node
                 }
